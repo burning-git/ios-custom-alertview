@@ -10,7 +10,7 @@
 //
 
 #import "ViewController.h"
-
+#import "AlterViewMultiple.h"
 @interface ViewController ()
 
 @end
@@ -38,26 +38,39 @@
 
 - (IBAction)launchDialog:(id)sender
 {
-    // Here we need to pass a full frame
-    CustomIOSAlertView *alertView = [[CustomIOSAlertView alloc] init];
-
-    // Add some custom content to the alert view
-    [alertView setContainerView:[self createDemoView]];
-
-    // Modify the parameters
-    [alertView setButtonTitles:[NSMutableArray arrayWithObjects:@"Close1", @"Close2", @"Close3", nil]];
-    [alertView setDelegate:self];
     
-    // You may use a Block, rather than a delegate.
-    [alertView setOnButtonTouchUpInside:^(CustomIOSAlertView *alertView, int buttonIndex) {
-        NSLog(@"Block: Button at position %d is clicked on alertView %d.", buttonIndex, (int)[alertView tag]);
-        [alertView close];
+    AlterViewMultipleObject * obex = [[AlterViewMultipleObject alloc] init];
+    obex.title = @"你好撒贷记卡类似的经历";
+    obex.message = @"xz cxjkl开始多久啊睡懒觉阿莱克斯放假啊老师放假阿双方就撒开了房间啊是否快乐路上看到飞机上了咖啡机斯库拉多夫结束了快点放假了";
+    obex.buttons = @[@"升级",@"你好"];
+    
+    AlterViewMultiple * asdas = [[AlterViewMultiple alloc] initAlterWithValues:obex selectBlcok:^(CustomIOSAlertView *alertView, int buttonIndex) {
+        NSLog(@"点击的%d个",buttonIndex);
     }];
     
-    [alertView setUseMotionEffects:true];
-
-    // And launch the dialog
-    [alertView show];
+    [asdas show];
+    
+    [asdas addSeparators];
+//    // Here we need to pass a full frame
+//    CustomIOSAlertView *alertView = [[CustomIOSAlertView alloc] init];
+//
+//    // Add some custom content to the alert view
+//    [alertView setContainerView:[self createDemoView]];
+//
+//    // Modify the parameters
+//    [alertView setButtonTitles:[NSMutableArray arrayWithObjects:@"Close1", @"Close2", @"Close3", nil]];
+//    [alertView setDelegate:self];
+//    
+//    // You may use a Block, rather than a delegate.
+//    [alertView setOnButtonTouchUpInside:^(CustomIOSAlertView *alertView, int buttonIndex) {
+//        NSLog(@"Block: Button at position %d is clicked on alertView %d.", buttonIndex, (int)[alertView tag]);
+//        [alertView close];
+//    }];
+//    
+//    [alertView setUseMotionEffects:true];
+//
+//    // And launch the dialog
+//    [alertView show];
 }
 
 - (void)customIOS7dialogButtonTouchUpInside: (CustomIOSAlertView *)alertView clickedButtonAtIndex: (NSInteger)buttonIndex

@@ -18,6 +18,7 @@
 		5EB26D0317EC642000F0971C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EB26D0217EC642000F0971C /* Images.xcassets */; };
 		5EE9A9BB17EC68960031B75E /* CustomIOSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE9A9BA17EC68960031B75E /* CustomIOSAlertView.m */; };
 		5EE9A9BE17EC7EA60031B75E /* demo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EE9A9BD17EC7EA60031B75E /* demo.png */; };
+		6699ACF01C0ACF3800D91D57 /* AlterViewMultiple.m in Sources */ = {isa = PBXBuildFile; fileRef = 6699ACEF1C0ACF3800D91D57 /* AlterViewMultiple.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		5EE9A9B917EC68960031B75E /* CustomIOSAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOSAlertView.h; sourceTree = "<group>"; };
 		5EE9A9BA17EC68960031B75E /* CustomIOSAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOSAlertView.m; sourceTree = "<group>"; };
 		5EE9A9BD17EC7EA60031B75E /* demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo.png; sourceTree = "<group>"; };
+		6699ACEE1C0ACF3800D91D57 /* AlterViewMultiple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlterViewMultiple.h; sourceTree = "<group>"; };
+		6699ACEF1C0ACF3800D91D57 /* AlterViewMultiple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlterViewMultiple.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 		5EE9A9B817EC68650031B75E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6699ACEE1C0ACF3800D91D57 /* AlterViewMultiple.h */,
+				6699ACEF1C0ACF3800D91D57 /* AlterViewMultiple.m */,
 				5EE9A9B917EC68960031B75E /* CustomIOSAlertView.h */,
 				5EE9A9BA17EC68960031B75E /* CustomIOSAlertView.m */,
 			);
@@ -192,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EE9A9BB17EC68960031B75E /* CustomIOSAlertView.m in Sources */,
+				6699ACF01C0ACF3800D91D57 /* AlterViewMultiple.m in Sources */,
 				5EB26CE417EC5EEB00F0971C /* ViewController.m in Sources */,
 				5EB26CDB17EC5EEB00F0971C /* AppDelegate.m in Sources */,
 				5EB26CD717EC5EEB00F0971C /* main.m in Sources */,
